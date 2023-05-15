@@ -2,6 +2,7 @@
  * Hooks
  */
 export * from './useField'
+export * from './usePersistedField'
 
 /**
  * Main components
