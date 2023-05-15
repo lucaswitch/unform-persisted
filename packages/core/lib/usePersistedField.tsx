@@ -35,11 +35,6 @@ export function usePersistedField(name: string) {
     clearFieldError(fieldName)
   }, [clearFieldError, fieldName])
 
-  useEffect(() => () => unregisterField(fieldName), [
-    fieldName,
-    unregisterField,
-  ])
-
   return {
     fieldName,
     registerField,
